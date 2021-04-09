@@ -16,7 +16,7 @@ class collisionDetector{
     step(){
         const actualCollisionState = this.detect();
         if(this.previousCollisionState !== actualCollisionState){
-            window.open('/public/pokemon.html', '_blank');
+            window.open('/pokemon.html', '_blank');
             this.previousCollisionState = actualCollisionState;
         }
         else {

@@ -1,11 +1,3 @@
-/*
-  download node.js
-  npm init
-  npm insatll express --save
-  npm install socket.io --save
-
-*/
-
 (function() {
   var express = require('express');
   var socket = require('socket.io');
