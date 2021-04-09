@@ -1,7 +1,10 @@
 cd server/libs
-  npm init
-  npm insatll express --save
-  npm install socket.io --save
+
+npm init
+  
+npm insatll express --save
+  
+npm install socket.io --save
 
 after install packages
 
