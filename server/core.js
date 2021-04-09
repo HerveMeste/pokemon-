@@ -1,3 +1,3 @@
 
 var server = require("./libs/server");
-server.init(5500, "Pokemon");
+server.init(3000, "Pokemon");
