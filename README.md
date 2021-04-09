@@ -2,7 +2,7 @@
 
 git clone https://github.com/HerveMeste/pokemon-.git
 
-2)after move to folder libs:
+2)after move to folder server:
 
 cd server
 
