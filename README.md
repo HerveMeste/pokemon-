@@ -19,3 +19,5 @@ node core.js
 open http://localhost:3000/
 
 And Have fun !
+
+you can move the first player with ZQSD and you can move the second player with OKLM
