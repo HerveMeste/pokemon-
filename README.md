@@ -12,7 +12,8 @@ npm init
 npm install express --save
 npm install socket.io --save
 
-4)after install packages launch app
+4)after install packages 
+launch app
 
 node core.js
 
