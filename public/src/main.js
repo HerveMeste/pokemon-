@@ -1,5 +1,3 @@
-// client.init("localhost:5500");
-
 function setup() {
   Screen.init();
   new rawImage("sacha");
