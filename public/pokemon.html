@@ -1,0 +1,69 @@
+<html>
+    <head> 
+        <meta charset="UTF-8"> 
+        <script src="./src/entities/Pokemon.js"></script>
+        <script src="src/main.js"></script>       
+    </head>
+    <table>
+        <tr>
+            <td id='hp1'></td>
+            <td id='hp2'></td>
+        </tr>
+        <tr>
+            <td id='pokemonOne'></td>
+            <td id='pokemonTwo'></td>
+        </tr>
+        <tr>
+            <td colspan='2' id='comment'></td>
+        </tr>
+        <tr>
+            <td>
+                <input type='button' class='btn' id='m0'>
+            </td>
+        </tr>
+    </table>
+
+</html>
+
+
+<style>
+    th,
+    td {
+        padding: 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    p {
+        font-family: consolas;
+    }
+</style>
+
+<script>
+
+    let pokemonOne = spawn(true);
+    createPokemonOne = document.createElement('img');
+    createPokemonOne.src = pokemonOne.image;
+    document.getElementById('pokemonOne').appendChild(createPokemonOne);
+    document.getElementById('hp1').innerHTML = '<p>HP: ' + pokemonOne.hp + '/' + pokemonOne.fullHp + '</p>';
+
+    let pokemonTwo = spawn(false);
+    createPokemonTwo = document.createElement('img');
+    createPokemonTwo.src = pokemonTwo.image;
+    document.getElementById('pokemonTwo').appendChild(createPokemonTwo);
+    document.getElementById('hp2').innerHTML = '<p>HP: ' + pokemonTwo.hp + '/' + pokemonTwo.fullHp + '</p>';
+
+    let btn = document.getElementById('m0');
+    let attackPokemon = pokemonOne.attacks[0];
+    function addHandler(btn, attackPokemon, pokemonOne, pokemonTwo) {
+        btn.addEventListener('click', () => {
+            attackToPokemon(attackPokemon, pokemonOne, pokemonTwo, 'hp2', '');
+            setTimeout(attackToPokemon, 2000, pokemonTwo.attacks[0], pokemonTwo, pokemonOne, 'hp1', "l'adversaire ");
+        });
+    }
+    addHandler(btn, attackPokemon, pokemonOne, pokemonTwo);
+
+</script>

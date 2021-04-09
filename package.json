@@ -1,0 +1,23 @@
+{
+  "name": "pokemononline",
+  "description": "A base for making an online Pokemon game.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloseRange/PokemonOnline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CloseRange/PokemonOnline/issues"
+  },
+  "homepage": "https://github.com/CloseRange/PokemonOnline#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  }
+}
