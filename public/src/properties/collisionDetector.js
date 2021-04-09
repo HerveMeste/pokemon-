@@ -19,8 +19,5 @@ class collisionDetector{
             window.open('/pokemon.html', '_blank');
             this.previousCollisionState = actualCollisionState;
         }
-        else {
-
-        }
     }
 }
