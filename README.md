@@ -15,5 +15,7 @@ npm install socket.io --save
 4)after install packages launch app
 
 node core.js
+
 open http://localhost:3000/
+
 And Have fun !
